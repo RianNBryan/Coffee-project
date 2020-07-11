@@ -17,6 +17,30 @@
 <body>
 <h1> Great Scott Coffee!</h1>
 
+
+<div class="row">
+    <div class="col s8">
+        <form id="search-form" autocomplete="off">
+            <div class="input-field grey-text text-darken-4">
+                <input type="text" id="search">
+                <label for="search">Coffee Name</label>
+            </div>
+        </form>
+    </div>
+    <div class="input-field col s4">
+        <select name="roast-selection" id="roast-selection">
+            <option value="">All</option>
+            <option value="light">Light Roast</option>
+            <option value="medium">Medium Roast</option>
+            <option value="dark">Dark Roast</option>
+        </select>
+        <label>Roast Type</label>
+    </div>
+</div>
+<!--<div class="row">-->
+<!--    <div id="coffees"></div>-->
+<!--</div>-->
+
 <!--<div class="embed-responsive embed-responsive-16by9">-->
 <!--    <iframe class="embed-responsive-item" src="https://youtu.be/rlTY1hDlXu0" allowfullscreen></iframe>-->
 <!--</div>-->
@@ -29,19 +53,19 @@
 <!--</div>-->
 
 
-<section class="jumbotron text-center">
-    <video id="video-background" preload muted autoplay loop>
-        <source src="https://youtu.be/rlTY1hDlXu0" >
-    </video>
-    <div class="container">
-        <h1 class="jumbotron-heading">Album example</h1>
-        <p class="lead text-muted">Something short </p>
-        <p>
-            <a href="#" class="btn btn-primary my-2">Main call to action</a>
-            <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-        </p>
-    </div>
-</section>
+<!--<section class="jumbotron text-center">-->
+<!--    <video id="video-background" preload muted autoplay loop>-->
+<!--        <source src="https://youtu.be/rlTY1hDlXu0" >-->
+<!--    </video>-->
+<!--    <div class="container">-->
+<!--        <h1 class="jumbotron-heading">Album example</h1>-->
+<!--        <p class="lead text-muted">Something short </p>-->
+<!--        <p>-->
+<!--            <a href="#" class="btn btn-primary my-2">Main call to action</a>-->
+<!--            <a href="#" class="btn btn-secondary my-2">Secondary action</a>-->
+<!--        </p>-->
+<!--    </div>-->
+<!--</section>-->
 
 <!--In your body just add those lines.Change the id number.-->
 
@@ -62,16 +86,15 @@
 </form>
 
 
-<table>
-    <thead>
-    <tr>
-        <th>ID</th>
-        <th>NAME</th>
-        <th>ROAST</th>
-    </tr>
-    </thead>
-    <tbody id="coffees"></tbody>
-</table>
+
+
+    <div id="coffees">
+        <div>NAME</div>
+        <div>ROAST</div>
+    </div>
+
+
+
 
 <script src="main.js"></script>
 </body>
