@@ -2,10 +2,10 @@
 
 function renderCoffee(coffee) {
     var html = '<div class="coffee">';
-    html += '<div>' + coffee.id + '</div>';
+    // html += '<td>' + coffee.id + '</td>';
     html += '<div>' + coffee.name + '</div>';
     html += '<div>' + coffee.roast + '</div>';
-    html += '</tr>';
+    html += '</div>';
 
     return html;
 }
@@ -27,7 +27,7 @@ function updateCoffees(e) {
             filteredCoffees.push(coffee);
         }
     });
-    tbody.innerHTML = renderCoffees(filteredCoffees);
+    divBody.innerHTML = renderCoffees(filteredCoffees);
 }
 
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
@@ -48,10 +48,10 @@ var coffees = [
     {id: 14, name: 'Enchantment Under THe Sea Blend ', roast: 'dark'},
 ];
 
-var tbody = document.querySelector('#coffees');
+var divBody = document.querySelector('#coffees');
 var submitButton = document.querySelector('#submit');
 var roastSelection = document.querySelector('#roast-selection');
 
-tbody.innerHTML = renderCoffees(coffees);
+divBody.innerHTML = renderCoffees(coffees.reverse());
 
 submitButton.addEventListener('click', updateCoffees);
