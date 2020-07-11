@@ -1,10 +1,10 @@
 "use strict"
 
 function renderCoffee(coffee) {
-    var html = '<tr class="coffee">';
-    html += '<td>' + coffee.id + '</td>';
-    html += '<td>' + coffee.name + '</td>';
-    html += '<td>' + coffee.roast + '</td>';
+    var html = '<div class="coffee">';
+    html += '<div>' + coffee.id + '</div>';
+    html += '<div>' + coffee.name + '</div>';
+    html += '<div>' + coffee.roast + '</div>';
     html += '</tr>';
 
     return html;
@@ -32,20 +32,20 @@ function updateCoffees(e) {
 
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
 var coffees = [
-    {id: 1, name: 'Light City', roast: 'light'},
-    {id: 2, name: 'Half City', roast: 'light'},
-    {id: 3, name: 'Cinnamon', roast: 'light'},
-    {id: 4, name: 'City', roast: 'medium'},
-    {id: 5, name: 'American', roast: 'medium'},
-    {id: 6, name: 'Breakfast', roast: 'medium'},
-    {id: 7, name: 'High', roast: 'dark'},
-    {id: 8, name: 'Continental', roast: 'dark'},
-    {id: 9, name: 'New Orleans', roast: 'dark'},
-    {id: 10, name: 'European', roast: 'dark'},
-    {id: 11, name: 'Espresso', roast: 'dark'},
-    {id: 12, name: 'Viennese', roast: 'dark'},
-    {id: 13, name: 'Italian', roast: 'dark'},
-    {id: 14, name: 'French', roast: 'dark'},
+    {id: 1, name: 'Einstein Blend', roast: 'light'},
+    {id: 2, name: 'Jennifer Blend', roast: 'light'},
+    {id: 3, name: 'HoverBoard Blend', roast: 'light'},
+    {id: 4, name: 'Time Train', roast: 'medium'},
+    {id: 5, name: '1955..1955!?! Blend', roast: 'medium'},
+    {id: 6, name: 'Clock Tower Blend', roast: 'medium'},
+    {id: 7, name: 'Delorean Blend', roast: 'dark'},
+    {id: 8, name: 'Biff Tannon Blend', roast: 'dark'},
+    {id: 9, name: 'Tacoma blend', roast: 'dark'},
+    {id: 10, name: '1.21 Gigawatt Blend', roast: 'dark'},
+    {id: 11, name: 'Flux Capacitor Blend', roast: 'dark'},
+    {id: 12, name: 'Bolt of Lightning', roast: 'dark'},
+    {id: 13, name: 'Johnny Be Good Blend', roast: 'dark'},
+    {id: 14, name: 'Enchantment Under THe Sea Blend ', roast: 'dark'},
 ];
 
 var tbody = document.querySelector('#coffees');
