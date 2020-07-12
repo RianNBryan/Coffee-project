@@ -1,10 +1,31 @@
 "use strict"
+//
+// function myFunction() {
+//     var input, filter, div, a, i, txtValue;
+//     input = document.getElementById("myInput");
+//     filter = input.value.toUpperCase();
+//     ul = document.getElementById("myUL");
+//     li = ul.getElementsByTagName("li");
+//     for (i = 0; i < div.length; i++) {
+//         a = div[i].getElementsByTagName("a")[0];
+//         txtValue = a.textContent || a.innerText;
+//         if (txtValue.toUpperCase().indexOf(filter) > -1) {
+//             div[i].style.display = "";
+//         } else {
+//             div[i].style.display = "none";
+//         }
+//     }
+// }
+//in the search bar, when the user input is equal in type and value to any bootstrap card
+//display that boostrap card(s)
+
+
 
 function renderCoffee(coffee) {
     var html = '<div class="coffee">';
     // html += '<td>' + coffee.id + '</td>';
-    html += '<div>' + coffee.name + '</div>';
-    html += '<div>' + coffee.roast + '</div>';
+    html += '<h3>' + coffee.name + '</h3>';
+    html += '<p>' + coffee.roast + '</p>';
     html += '</div>';
 
     return html;
