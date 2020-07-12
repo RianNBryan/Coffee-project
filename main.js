@@ -31,6 +31,12 @@ function renderCoffee(coffee) {
     return html;
 }
 
+
+
+
+
+
+
 function renderCoffees(coffees) {
     var html = '';
     for(var i = coffees.length - 1; i >= 0; i--) {
@@ -44,6 +50,7 @@ function updateCoffees(e) {
     var selectedRoast = roastSelection.value;
     var filteredCoffees = [];
     coffees.forEach(function(coffee) {
+
         if (coffee.roast === selectedRoast) {
             filteredCoffees.push(coffee);
         }
@@ -55,7 +62,7 @@ function updateCoffees(e) {
 var coffees = [
     {id: 1, name: 'Einstein Blend', roast: 'light'},
     {id: 2, name: 'Jennifer Blend', roast: 'light'},
-    {id: 3, name: 'HoverBoard Blend', roast: 'light'},
+    {id: 3, name: 'HoverBoards dont work on water Blend', roast: 'light'},
     {id: 4, name: 'Time Train', roast: 'medium'},
     {id: 5, name: '1955..1955!?! Blend', roast: 'medium'},
     {id: 6, name: 'Clock Tower Blend', roast: 'medium'},

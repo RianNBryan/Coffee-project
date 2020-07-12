@@ -8,12 +8,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
           integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-<!--    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">-->
-<!--    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
-<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">-->
-<!--
-
-</head>-->
+    <!--    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">-->
+    <!--    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
+    <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">-->
+    <!--
+    </head>-->
 <body>
 <h1> Great Scott Coffee!</h1>
 
@@ -33,6 +32,7 @@
             <option value="light">Light Roast</option>
             <option value="medium">Medium Roast</option>
             <option value="dark">Dark Roast</option>
+                <input id="submit" type="submit"/>
         </select>
         <label>Roast Type</label>
     </div>
@@ -75,23 +75,23 @@
 <!--    </iframe>-->
 <!--</div>-->
 
-<form>
-    <label for="roast-selection"></label>
-    <select id="roast-selection">
-        <option>light</option>
-        <option>medium</option>
-        <option>dark</option>
-    </select>
-    <input id="submit" type="submit"/>
-</form>
+<!--<form>-->
+<!--    <label for="roast-selection"></label>-->
+<!--    <select id="roast-selection">-->
+<!--        <option>light</option>-->
+<!--        <option>medium</option>-->
+<!--        <option>dark</option>-->
+<!--    </select>-->
+<!--    <input id="submit" type="submit"/>-->
+<!--</form>-->
 
 
 
 
-    <div id="coffees">
-        <h3>NAME</h3>
-        <p>ROAST</p>
-    </div>
+<div id="coffees">
+    <h3>NAME</h3>
+    <p>ROAST</p>
+</div>
 
 
 
@@ -102,82 +102,32 @@
 
 
 
-Great Scott coffee!
+<!--Great Scott coffee!-->
 
 
 <!--///prototype draft-->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Order Pizza</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/custom.css">
-    <script src="https://kit.fontawesome.com/c0cbb5890a.js" crossorigin="anonymous"></script>
-</head>
-<body>
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Great Scott Coffee</a>
-    <ul class="nav navbar-nav">
-        <li><a class="nav-item nav-link active" href="#">Order online</a></li>
-        <li><a class="nav-item nav-link" href="#">Menu</a></li>
-    </ul>
-    <form class="form-inline">
-        <input class="form-control mr-sm-2" type="POST" placeholder="Zip code" aria-label="Zip code">
-        <button class="btn  btn-sm btn-outline-secondary my-2 my-sm-0" type="submit">Get it Delivered</button>
-    </form>
-    <ul class="navbar-nav ml-auto">
-        <li><a class="nav-item nav-link" href="#"><i class="fas fa-user"></i></a></li>
-        <li><a class="nav-item nav-link" href="#">Sign up</a></li>
-    </ul>
-</nav>
-<!--//new jumbotron here-->
 
 
 
 
-<section class="jumbotron text-center">
-    <video id="video-background" preload muted autoplay loop>
-        <source src="https://youtu.be/rlTY1hDlXu0" >
-    </video>
-    <div class="container">
-        <h1 class="jumbotron-heading">Album example</h1>
-        <p class="lead text-muted">Something short </p>
-        <p>
-            <a href="#" class="btn btn-primary my-2">Main call to action</a>
-            <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-        </p>
-    </div>
-</section>
+<!--<section class="jumbotron text-center">-->
+<!--    <video id="video-background" preload muted autoplay loop>-->
+<!--        <source src="https://youtu.be/rlTY1hDlXu0" >-->
+<!--    </video>-->
+<!--    <div class="container">-->
+<!--        <h1 class="jumbotron-heading">Album example</h1>-->
+<!--        <p class="lead text-muted">Something short </p>-->
+<!--        <p>-->
+<!--            <a href="#" class="btn btn-primary my-2">Main call to action</a>-->
+<!--            <a href="#" class="btn btn-secondary my-2">Secondary action</a>-->
+<!--        </p>-->
+<!--    </div>-->
+<!--</section>-->
 
 <!--//new jumbotron is going here -->
 
 
-<ul class="nav nav-tabs" id="orderlist" role="tablist">
-    <li class="nav-item">
-        <a class="nav-link active" id="size-tab" data-toggle="tab"  href="#size" role="tab" aria-controls="size" aria-selected="true"><span class="badge-pill badge-secondary">1</span>&nbsp Light Roast</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" id="cheese-tab" data-toggle="tab" href="#cheese" role="tab" aria-controls="cheese" aria-selected="false"><span class="badge-pill badge-secondary">2</span>&nbsp Medium Roast</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" id="topping-tab" data-toggle="tab" href="#topping" role="tab" aria-controls="topping" aria-selected="false"><span class="badge-pill badge-secondary">3</span>&nbsp Dark Roast</a>
-    </li>
-</ul>
-<div class="tab-content" id="order">
-    <div class="tab-pane fade show active" id="size" role="tabpanel" aria-labelledby="size-tab">
-
-
-
-        <div class="card">
-            <div class="card-header text-white bg-primary mg-3">
-                light roast
-            </div>
-            <div class="card-body">
-
-<!--                new card here-->
+                <!--                new card here-->
 
 
                 <div class="card" style="width: 18rem;">
@@ -188,187 +138,6 @@ Great Scott coffee!
                         <button type="button" class="btn btn-warning">coffee name</button>
                     </div>
                 </div>
-
-<!--               new card here  -->
-
-                <div class="card">
-                    <div class="card-header">
-                        Hand Tossed
-                    </div>
-                    <div class="card-body">
-                        Garlic seasoned crust with a rich, buttery taste.
-                    </div>
-                    <ul class="list-group">
-                        <li class="list-group-item">
-                            <div class="custom-control custom-radio">
-                                <input type="radio" id="size1" name="chooseSize" class="custom-control-input">
-                                <label class="custom-control-label" for="size1">Small (10")</label>
-                            </div>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="custom-control custom-radio">
-                                <input type="radio" id="size2" name="chooseSize" class="custom-control-input">
-                                <label class="custom-control-label" for="size2">Medium (12")</label>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="card mt-3">
-                    <div class="card-header">
-                        Crispy Thin
-                    </div>
-                    <div class="card-body">
-                        Thin enough for optimum crispy to crunch ratio.
-
-                    </div>
-                    <ul class="list-group">
-                        <li class="list-group-item">
-                            <div class="custom-control custom-radio">
-                                <input type="radio" id="crust1" name="chooseCrust" class="custom-control-input">
-                                <label class="custom-control-label" for="crust1">Medium (12")</label>
-                            </div>
-                        </li>
-                        <li class="list-group-item">
-                            <div class="custom-control custom-radio">
-                                <input type="radio" id="crust2" name="chooseCrust" class="custom-control-input">
-                                <label class="custom-control-label" for="crust2">Large (14")</label>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card-footer text-right">
-                <button type="button" class="btn btn-primary">Next Step ></button>
-            </div>
-        </div>
-    </div>
-    <div class="tab-pane fade" id="cheese" role="tabpanel" aria-labelledby="cheese-tab">
-        <div class="card">
-            <div class="card-header text-white bg-primary mg-3">
-               medium roast
-            </div>
-            <div class="card-body">
-                <div class="card">
-                    <div class="card-header">
-                        Cheese
-                    </div>
-                    <div class="card-body">
-                        <div class="form-group">
-                            <label for="cheeseAmount">How much?</label>
-                            <select class="form-control" id="cheeseAmount">
-                                <option>Light</option>
-                                <option>Normal</option>
-                                <option>Extra</option>
-                                <option>Double</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <div class="card mt-3">
-                    <div class="card-header">
-                        Sauce
-                    </div>
-                    <div class="card-body">
-                        <div class="form-group">
-                            <label for="sauceType">What Type?</label>
-                            <select class="form-control" id="sauceType">
-                                <option>Tomato Sauce</option>
-                                <option>Marinara Sauce</option>
-                                <option>BBQ Sauce</option>
-                                <option>Alfredo Sauce</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="sauceAmount">How much?</label>
-                            <select class="form-control" id="sauceAmount">
-                                <option>Light</option>
-                                <option>Normal</option>
-                                <option>Extra</option>
-                                <option>Double</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card-footer text-right">
-                <div class="btn-group" role="group" aria-label="previousNext">
-                    <button type="button" class="btn btn-primary">< Previous Step</button>
-                    <button type="button" class="btn btn-primary">Next Step ></button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="tab-pane fade" id="topping" role="tabpanel" aria-labelledby="topping-tab">
-        <div class="card">
-            <div class="card-header text-white bg-primary mg-3">
-                Dark Roast
-            </div>
-            <div class="card-body">
-                <div class="card">
-                    <div class="card-header">
-                        Choose Meats
-                    </div>
-                    <div class="card-body">
-                        <ul class="list-group">
-                            <li class="list-group-item">
-                                &nbsp
-                                <input class="form-check-input" type="checkbox" value="meats" id="meat1">
-                                <label class="form-check-label" for="meat1">Beef</label>
-                            </li>
-                            <li class="list-group-item">
-                                &nbsp
-                                <input class="form-check-input" type="checkbox" value="meats" id="meat2">
-                                <label class="form-check-label" for="meat2">Ham</label>
-                            </li>
-                            <li class="list-group-item">
-                                &nbsp
-                                <input class="form-check-input" type="checkbox" value="meats" id="meat3">
-                                <label class="form-check-label" for="meat3">Philly Steak</label>
-                            </li>
-                            <li class="list-group-item">
-                                &nbsp
-                                <input class="form-check-input" type="checkbox" value="meats" id="meat4">
-                                <label class="form-check-label" for="meat4">Bacon</label>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card mt-3">
-                    <div class="card-header">
-                        Choose Non-Meats
-                    </div>
-                    <div class="card-body">
-                        <ul class="list-group">
-                            <li class="list-group-item">
-                                &nbsp
-                                <input class="form-check-input" type="checkbox" value="veggies" id="veggie1">
-                                <label class="form-check-label" for="veggie1">Green Peppers</label>
-                            </li>
-                            <li class="list-group-item">
-                                &nbsp
-                                <input class="form-check-input" type="checkbox" value="veggies" id="veggie2">
-                                <label class="form-check-label" for="veggie2">Mushrooms</label>
-                            </li>
-                            <li class="list-group-item">
-                                &nbsp
-                                <input class="form-check-input" type="checkbox" value="veggies" id="veggie3">
-                                <label class="form-check-label" for="veggie3">Onions</label>
-                            </li>
-                            <li class="list-group-item">
-                                &nbsp
-                                <input class="form-check-input" type="checkbox" value="veggies" id="veggie4">
-                                <label class="form-check-label" for="veggie4">Jalapeno Peppers</label>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="card-footer text-right">
-                <button type="button" class="btn btn-primary">Checkout <i class="fas fa-shopping-cart"></i></button>
-            </div>
-        </div>
-    </div>
-</div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
