@@ -39,14 +39,22 @@
 var searchBar = document.querySelector("#myInput");
 searchBar.addEventListener("input", updateCoffees)
 
+//
+
 
 function renderCoffee(coffee) {
-    var html = '<div class="coffee">';
-    // html += '<td>' + coffee.id + '</td>';
-    html += '<h3>' + coffee.name + '</h3>';
-    //add boostrap classes here
-    html += '<p>' + coffee.roast + '</p>';
-    html += '</div>';
+    var html = `
+<div class="col-6 p-2"><div class="card ninjacardstyle">
+    <img src="Delorean.jpg" class="card-img-top" alt="..." style="max-height: 256px; object-fit: cover" >
+    <div class="card-body">
+    <h5 class="card-title">${coffee.name}</h5>
+<p class="card-text">${coffee.roast}</p>
+
+<button type="button" class="btn btn-warning">Buy This!</button>
+</div>
+</div>
+</div>
+    `
 
     return html;
 }
@@ -74,7 +82,7 @@ function updateCoffees(e) {
         if (regex.test(coffee.name)) {
             if (coffee.roast === selectedRoast || selectedRoast === "") {
 
-            filteredCoffees.push(coffee);
+                filteredCoffees.push(coffee);
             }
         }
     });
