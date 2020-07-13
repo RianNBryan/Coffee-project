@@ -19,24 +19,22 @@
 
 
 <!--<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">-->
+<div class="d-flex justify-content-center">
 <!--//////////-->
-
-
-<div class="row d-flex justify-content-center">
-    <div class="col s8">
+    <div>
         <form id="search-form" autocomplete="on">
             <div class="input-field grey-text text-darken-4">
 <!--                <input type="text" id="search">//keyup = function-->
 
-                <input class="d-flex justify-content-center" type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.."
+                <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.."
                        title="Type in a name">
 
                 <label for="search">Coffee Name</label>
-                <input id="submit1" type="submit"/>
+
             </div>
         </form>
     </div>
-    <div class="input-field col s4">
+    <div>
         <select name="roast-selection" id="roast-selection">
             <option value="">All</option>
             <option value="light">Light Roast</option>
@@ -50,8 +48,8 @@
 <!--<div class="row">-->
 
 
-<div id="coffees">
-    <h3>NAME</h3>
+<div class="d-flex justify-content-around flex-wrap row" id="coffees">
+    <h3 class="col-4">NAME</h3>
     <p>ROAST</p>
 </div>
 
