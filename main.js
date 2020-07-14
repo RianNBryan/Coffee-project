@@ -45,7 +45,7 @@ searchBar.addEventListener("input", updateCoffees)
 function renderCoffee(coffee) {
     var html = `
 <div class="col-6 p-2"><div class="card ninjacardstyle">
-    <img src="Delorean.jpg" class="card-img-top" alt="..." style="max-height: 256px; object-fit: cover" >
+    <img src="Delorean.jpg" class="card-img-top" alt="..." style="max-height: 100px; object-fit: cover" >
     <div class="card-body">
     <h5 class="card-title">${coffee.name}</h5>
 <p class="card-text">${coffee.roast}</p>
