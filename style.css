@@ -19,19 +19,6 @@ td, th {
     padding: 5px 10px;
 }
 
-/*.jumbotron{*/
-/*    background-image: url("https://youtu.be/rlTY1hDlXu0");*/
-/*    background-size: cover;*/
-/*    background-repeat: no-repeat;*/
-
-/*}*/
-
-.jumbotron{
-    background-image: url("DeloreanImage.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-
-}
 .center-text {
     display: flex;
     position: center;

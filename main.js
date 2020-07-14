@@ -1,40 +1,4 @@
 "use strict"
-//
-// function myFunction() {
-//     var input, filter, div, a, i, txtValue;
-//     input = document.getElementById("myInput");
-//     filter = input.value.toUpperCase();
-//     ul = document.getElementById("myUL");
-//     li = ul.getElementsByTagName("li");
-//     for (i = 0; i < div.length; i++) {
-//         a = div[i].getElementsByTagName("a")[0];
-//         txtValue = a.textContent || a.innerText;
-//         if (txtValue.toUpperCase().indexOf(filter) > -1) {
-//             div[i].style.display = "";
-//         } else {
-//             div[i].style.display = "none";
-//         }
-//     }
-// }
-//in the search bar, when the user input is equal in type and value to any bootstrap card
-//display that boostrap card(s)
-//
-// function myFunction() {
-//     var input, filter, ul, li, a, i, txtValue;
-//     input = document.getElementById("myInput");
-//     filter = input.value.toUpperCase();
-//     ul = document.getElementById("myUL");
-//     li = ul.getElementsByTagName("li");
-//     for (i = 0; i < li.length; i++) {
-//         a = li[i].getElementsByTagName("a")[0];
-//         txtValue = a.textContent || a.innerText;
-//         if (txtValue.toUpperCase().indexOf(filter) > -1) {
-//             li[i].style.display = "";
-//         } else {
-//             li[i].style.display = "none";
-//         }
-//     }
-// }
 
 var searchBar = document.querySelector("#myInput");
 searchBar.addEventListener("input", updateCoffees)
@@ -45,7 +9,7 @@ searchBar.addEventListener("input", updateCoffees)
 function renderCoffee(coffee) {
     var html = `
 <div class="col-6 p-2"><div class="card ninjacardstyle">
-    <img src="Delorean.jpg" class="card-img-top" alt="..." style="max-height: 100px; object-fit: cover" >
+    <img src="Delorean.jpg" class="card-img-top" alt="..." style="max-height: 250px; object-fit: cover" >
     <div class="card-body">
     <h5 class="card-title">${coffee.name}</h5>
 <p class="card-text">${coffee.roast}</p>
@@ -80,6 +44,7 @@ function updateCoffees(e) {
         //else test if regex matches
         //selected roast matches coffee roast
         if (regex.test(coffee.name)) {
+            ///this code allows you to find the specific coffee based on input
             if (coffee.roast === selectedRoast || selectedRoast === "") {
 
                 filteredCoffees.push(coffee);
